@@ -1,0 +1,8 @@
+<div class="title-edit">
+  <h1><%= @article.title %></h1>
+  <%= link_to "Edit", edit_article_path(@article.id) %>
+  <%= link_to "Delete", article_path(@article.id), method: :delete, data: "Are you sure ?" %>
+</div>
+<p><%= @article.content %></p>
+<%= link_to "Back to list", articles_path  %>
+
